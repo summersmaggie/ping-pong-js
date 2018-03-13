@@ -1,4 +1,4 @@
-import { pingPong } from './ping-pong';
+import { pingPong } from '../js/ping-pong.js';
 import './styles.css';
 
 $(document).ready(function() {
@@ -6,6 +6,7 @@ $(document).ready(function() {
     event.preventDefault();
     var goal = $('#goal').val();
     var output = pingPong(goal);
+
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
     });
